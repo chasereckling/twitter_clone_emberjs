@@ -1,9 +1,18 @@
 <h1>Twitter Haiku</h1>
 
-<ul>
-  <li>Tweet 1</li>
+<form>
+  <div class="form-group">
+    <label for="tweet">Haiku Tweet</label>
+    {{input id="tweet" class="form-control" value=tweet}}
+  </div>
 
+  <button class="btn btn-primary" {{action 'addTweet'}}>Tweet</button>
+</form>
+
+<ul>
   {{#each}}
-  <li>{{#link-to 'home' this.id}}{{title}}{{link-to}}</li>
+    <li>{{body}}<br>{{timeStamp}}</li>
   {{/each}}
 </ul>
+
+  <!-- <button class="btn btn-primary" {{action 'sortByID'}}>Sort that shit</button> -->
