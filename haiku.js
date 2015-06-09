@@ -1,0 +1,1 @@
+Haiku = Ember.Application.create();

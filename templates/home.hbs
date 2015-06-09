@@ -1,0 +1,9 @@
+<h1>Twitter Haiku</h1>
+
+<ul>
+  <li>Tweet 1</li>
+
+  {{#each}}
+  <li>{{#link-to 'home' this.id}}{{title}}{{link-to}}</li>
+  {{/each}}
+</ul>
